@@ -1,20 +1,4 @@
 POST http://{{host}}/event
-    ?WorkerActivityName=Available
-    &EventType=worker.activity.update
-    &ResourceType=worker
-    &WorkerTimeInPreviousActivityMs=59514
-    &Timestamp=1609180489
-    &WorkerActivitySid=WA001
-    &WorkerPreviousActivitySid=WA002
-    &WorkerTimeInPreviousActivity=59
-    &AccountSid=AC001
-    &WorkerName=Worker1
-    &Sid=EV001
-    &TimestampMs=1609180489150
-    &WorkerSid=WK001
-    &WorkspaceSid=WS001
-    &WorkspaceName=TestEvents
-    &WorkerPreviousActivityName=Offline
-    &EventDescription=Worker%20Worker1%20updated%20to%20Available%20Activity
-    &ResourceSid=WK001
-    &WorkerAttributes=%7B%7D
+Content-Type:application/x-www-form-urlencoded; charset=utf-8
+
+WorkerActivityName=Available&EventType=worker.activity.update&ResourceType=worker&WorkerTimeInPreviousActivityMs=59514&Timestamp=1609180489&WorkerActivitySid=WAfd66811ed8076ee560297f9462bea4e6&WorkerPreviousActivitySid=WAf4aa0716f15914c9c85ec824d7a58a7e&WorkerTimeInPreviousActivity=59&AccountSid=AC4ff7b1d57c02ab3facdb16005022139e&WorkerName=Worker1&Sid=EVcadb578beea6a6d205bdad1cfaa35358&TimestampMs=1609180489150&WorkerSid=WK083fc1bf5593d5cf9e2556e566c91cb2&WorkspaceSid=WS345f9dd61aa84c5b440424ffb3d5e42a&WorkspaceName=TestEvents&WorkerPreviousActivityName=Offline&EventDescription=Worker%20Worker1%20updated%20to%20Available%20Activity&ResourceSid=WK083fc1bf5593d5cf9e2556e566c91cb2&WorkerAttributes=%7B%7D

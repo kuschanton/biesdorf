@@ -20,6 +20,7 @@ dependencies {
     implementation(kotlin("stdlib"))
     implementation("io.kotless", "ktor-lang", "0.1.6")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.11.2")
+    implementation("com.amazonaws:amazon-kinesis-client:1.14.0")
 
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
@@ -55,6 +56,14 @@ kotless {
         lambda {
             kotless {
                 packages = setOf("com.ak.biesdorf")
+            }
+        }
+    }
+
+    extensions {
+        terraform {
+            files {
+                add(file("src/main/tf/extensions.tf"))
             }
         }
     }
