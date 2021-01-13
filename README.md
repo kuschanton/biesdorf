@@ -1,5 +1,5 @@
 ### Description
-This project shows how events from Twilio TaskRouter can be forwarded to AWS Kinesis for futrher processing.
+This project shows how events from Twilio TaskRouter can be forwarded to AWS Kinesis for futrher processing. Might be useful while [Twilio Event Streams](https://www.twilio.com/blog/twilio-event-streams-private-beta) is still in Private Beta.
 
 The project is built using Kotless (https://github.com/JetBrains/kotless) and Ktor DSL in particular (https://github.com/JetBrains/kotless/wiki/Ktor-DSL-Overview).
 
